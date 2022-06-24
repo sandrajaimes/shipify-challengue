@@ -16,8 +16,13 @@ const getClientById = (idClient) => {
     })
 }
 
+const getAllClients = () => {
+    return clientModel.findAll()
+}
+
 module.exports = {
     getSummaryClientByIdAndDates,
-    getClientById
+    getClientById,
+    getAllClients
 
 };
