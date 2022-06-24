@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:latest
+    cap_add:
+      - SYS_NICE
+    restart: always
+    environment:
+      - MYSQL_DATABASE=bank
+      - MYSQL_ROOT_PASSWORD=bankroot
+      - TZ=Europe/Sofia
+    ports:
+      - '3306:3306'
+    volumes:
+      - db-volume:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  db-volume:
+    driver: local

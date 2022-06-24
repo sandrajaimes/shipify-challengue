@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-express-sequelize-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.js",
+    "start:migrations": "sequelize db:migrate --debug",
+    "start:seeders": "sequelize db:seed:all --debug",
+    "undo:all:migrations": "sequelize db:migrate:undo:all",
+    "undo:all:seeds": "sequelize db:seed:undo:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrajaimes/nodejs-express-sequelize-boilerplate.git"
+  },
+  "author": "Sandra Jaimes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandrajaimes/nodejs-express-sequelize-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sandrajaimes/nodejs-express-sequelize-boilerplate#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "http-status": "^1.5.2",
+    "joi": "^17.6.0",
+    "moment": "^2.29.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.21.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18",
+    "sequelize-cli": "^6.4.1"
+  }
+}
