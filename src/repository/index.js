@@ -1,1 +1,1 @@
-module.exports.Taxes = require('src/repository/tax.repository');
+module.exports.Tax = require('../repository/tax.repository');

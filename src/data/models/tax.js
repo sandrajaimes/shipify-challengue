@@ -14,11 +14,13 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     Tax.init({
-        name: Sequelize.STRING,
-        value: Sequelize.FLOAT,
+        name: DataTypes.STRING,
+        value: DataTypes.FLOAT,
+        active: DataTypes.BOOLEAN,
     }, {
         sequelize,
         modelName: 'Tax',
+        tableName: 'tax'
     });
     return Tax;
 };

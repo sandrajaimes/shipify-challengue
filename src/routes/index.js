@@ -1,8 +1,8 @@
 const express = require('express');
-const userRoute = require('./user.route');
+const taxRoute = require('../routes/tax.route');
 
 const router = express.Router();
 
-router.use(userRoute)
+router.use(taxRoute)
 
 module.exports = router;

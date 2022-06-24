@@ -1,1 +1,1 @@
-module.exports.taxService = require('src/services/tax.service');
+module.exports.taxService = require('../services/tax.service');
