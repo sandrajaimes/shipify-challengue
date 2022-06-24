@@ -3,7 +3,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     return queryInterface.bulkInsert('movements', [{
-      amount: 50,
+      amount: 50.10,
       type_of_movement_id: 1,
       client_id: 1,
       createdAt: new Date(),
@@ -17,7 +17,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        amount: 50,
+        amount: 50.30,
         type_of_movement_id: 2,
         client_id: 1,
         createdAt: new Date(),

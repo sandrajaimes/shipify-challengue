@@ -7,7 +7,8 @@
     "dialect": "mysql",
     "query": {
       "raw": true
-    }
+    },
+    "dialectOptions": { "decimalNumbers": true }
   },
   "test": {
     "username": "root",

@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       commission: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DECIMAL(10,2),
       },
       client_id: {
         type: Sequelize.INTEGER,

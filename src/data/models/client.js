@@ -16,10 +16,12 @@ module.exports = (sequelize, DataTypes) => {
   Client.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: DataTypes.STRING,
+    bank_account_creation_date: DataTypes.DATE,
   }, {
     sequelize,
     modelName: 'Client',
+    tableName: 'client'
   });
   return Client;
 };

@@ -6,6 +6,7 @@ module.exports = {
       firstName: 'John',
       lastName: 'Doe',
       email: 'example@example.com',
+      bank_account_creation_date: "2022-01-24 14:29:10",
       createdAt: new Date(),
       updatedAt: new Date()
     },
@@ -13,6 +14,7 @@ module.exports = {
         firstName: 'Stephanie',
         lastName: 'Miles',
         email: 'Stephanie.Miles@example.com',
+        bank_account_creation_date: "2020-01-24 14:29:10",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -20,6 +22,7 @@ module.exports = {
         firstName: 'Cory',
         lastName: 'Williams',
         email: 'Cory.Williams@example.com',
+        bank_account_creation_date: "2021-01-24 14:29:10",
         createdAt: new Date(),
         updatedAt: new Date()
       }]);

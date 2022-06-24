@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       amount: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2),
       },
       type_of_movement_id: {
         type: Sequelize.INTEGER,

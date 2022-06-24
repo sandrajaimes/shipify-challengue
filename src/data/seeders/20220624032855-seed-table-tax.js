@@ -10,7 +10,7 @@ module.exports = {
     },
       {
         name: 'commission_client',
-        value: 3,
+        value: 0.01,
         createdAt: new Date(),
         updatedAt: new Date()
       },

@@ -23,6 +23,14 @@ const getOneTaxById = (idTax) => {
     });
 };
 
+const getOneTaxByName = (nameTax) => {
+    return taxModel.findOne({
+        where: {
+            name: nameTax
+        }
+    });
+};
+
 const updateOneTaxById = (idTax, data) => {
     return taxModel.update({
         ...data

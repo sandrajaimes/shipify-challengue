@@ -19,6 +19,10 @@ module.exports = {
         unique: true,
         allowNull: false
       },
+      bank_account_creation_date: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
       active: {
         type: Sequelize.BOOLEAN,
         allowNull: false,
