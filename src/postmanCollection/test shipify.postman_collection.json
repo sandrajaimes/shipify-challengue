@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "d33a05d2-d843-4eef-baa7-c5a4ea7820fa",
+		"name": "test shipify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "get summary client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/client/summary/1?dateStart=2022-03-01 17:23:03&dateEnd=2022-03-30 17:23:03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"summary",
+								"1"
+							],
+							"query": [
+								{
+									"key": "dateStart",
+									"value": "2022-03-01 17:23:03"
+								},
+								{
+									"key": "dateEnd",
+									"value": "2022-03-30 17:23:03"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Taxes",
+			"item": [
+				{
+					"name": "Get all taxes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/taxes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"taxes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Tax By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/taxes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"taxes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update tax by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\": 0.0005\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/taxes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"taxes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create tax",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nuevo_tax\",\n    \"value\":  0.0005\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/taxes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"taxes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete tax by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/taxes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"taxes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Get All summary clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/company/clients/summary?dateStart=2022-06-01 17:23:03&dateEnd=2022-06-30 17:23:03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"company",
+								"clients",
+								"summary"
+							],
+							"query": [
+								{
+									"key": "dateStart",
+									"value": "2022-06-01 17:23:03"
+								},
+								{
+									"key": "dateEnd",
+									"value": "2022-06-30 17:23:03"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
